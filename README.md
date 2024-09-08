@@ -1,10 +1,13 @@
 # Replication package for "Has the Real Rate of Return Depreciated?"
-# Two programs have been used for this project 
-# i) Python for the empirical part,
-# ii) MATLAB for the Simulation part. 
+ Two programs have been used for this project 
+ i) Python for the empirical part,
+ ii) MATLAB for the Simulation part. 
+
+Maintainer Contact: Morten Olsen: mgo@econ.ku.dk
 
 These are here in order: 
 
+## Python details
 
 1. Project Overview
 This python script creates the 3 figures (including subplots) for rates of deprecation. It is based on Penn World Table 9.1 and the Bureau of Economic Analysis. Run on 3.12.4
@@ -49,5 +52,4 @@ Data Sources:
 - BEA_table_3_1_ESI.xlsx (downloaded as an .xls file): BEA - Table 3.1. ESI. Table 3.1ESI. Current-Cost Net Stock of Private Fixed Assets by Industry. Downloaded August 2021
 - BEA_table_3_4ESI.xlsx (downloaded as an .xls file): Table 3.4ESI. Current-Cost Depreciation of Private Fixed Assets by Industry. Downloaded August 2021
 
-8. Contact Information
-Maintainer Contact: Morten Olsen: mgo@econ.ku.dk
+## MATLAB details
