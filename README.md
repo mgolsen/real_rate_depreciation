@@ -53,3 +53,25 @@ Data Sources:
 - BEA_table_3_4ESI.xlsx (downloaded as an .xls file): Table 3.4ESI. Current-Cost Depreciation of Private Fixed Assets by Industry. Downloaded August 2021
 
 ## MATLAB details
+
+1. Project Overview 
+This matlab script creates Figure 5 and 6 from the simulation. It is based on Farhi and Gourio (2019) which allows a change it settings as described in the paper. Their code is included but 
+does not need to be run. 
+
+2. File descriptions
+main_file.m: Everything is run from this file. It can (optionally) run FG and the main_file_OLG. It permits changing the settings from identifying beta_star and not setting work force equal to population, but our code has not been run with these settings
+main_file_OLG.m: This file is run through main_file.m. It simulates the model for various values of sigma and mu (the markup, both no markup and the estimated markup) and for each it calculates the derivatives of r* with respect to total depreciation. It stores these values for future plots
+brute_force and brute_force_constraint: These files are value functions for solving the model 
+solve_beta: Solves for beta given the parameters of the model 
+
+3./4. Dependencies / Setup instructions
+Standard matlab (Matlab 2023b)
+
+5. Execution 
+Running the files: Run main_file.m. When this files folder is set to the current folder. 
+
+6. Output description 
+Expected filres: Figures in Paper_figures: Figure 5 and Figure 6. Additional figures contain various robustness checks and consistency checks 
+
+
+
