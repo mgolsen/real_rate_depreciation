@@ -30,9 +30,9 @@ def create_figure2(base_dir, data_dir, processed_data_dir, figures_dir):
     plt.figure(figsize=(7, 5))
     plt.plot(years, depreciation_values, marker='o', linestyle='-', color='b', linewidth=1.5)
     plt.xlabel('Year', fontsize=10)
-    plt.ylabel('Depreciation Rate (%)', fontsize=10)
-    plt.xticks(fontsize=8)
-    plt.yticks(fontsize=8)
+    plt.ylabel('Depreciation Rate (%)', fontsize=12)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
     plt.grid(True)
     plt.tight_layout()
 

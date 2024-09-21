@@ -47,12 +47,13 @@ def create_figure1(base_dir, data_dir, processed_data_dir, figures_dir):
     plt.plot(ae_avg_delta.index, ae_avg_delta.values*100, linestyle='-', color='r', linewidth=1.5, label='Unweighted', marker='o')
     plt.plot(ae_median_delta.index, ae_median_delta.values*100, linestyle='--', color='b', linewidth=1.5, label='Median', marker='s')
     plt.plot(ae_weighted_avg_delta.index, ae_weighted_avg_delta.values*100, linestyle='-', color='g', linewidth=1.5, label='GDP weighted', marker='^')
-    plt.xlabel('Year', fontsize=10)
-    plt.ylabel('Depreciation rate (%)', fontsize=10)
-    plt.xticks(fontsize=8)
-    plt.yticks(fontsize=8)
+    plt.xlabel('Year', fontsize=12)
+    plt.ylabel('Depreciation rate (%)', fontsize=12)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
     plt.grid(True)
-    plt.legend(fontsize=10)
+    plt.legend(fontsize=12)
+
     plt.tight_layout()
 
     # Save as Fig1A.pdf (for all Advanced Economies)
@@ -62,11 +63,12 @@ def create_figure1(base_dir, data_dir, processed_data_dir, figures_dir):
     # Plotting and saving figure for the United States
     plt.figure(figsize=(7, 5))
     plt.plot(us_delta_data['year'], us_delta_data['delta']*100, linestyle='-', color='b', linewidth=1.5)
-    plt.xlabel('Year', fontsize=10)
-    plt.ylabel('Depreciation rate (%)', fontsize=10)
-    plt.xticks(fontsize=8)
-    plt.yticks(fontsize=8)
+    plt.xlabel('Year', fontsize=12)
+    plt.ylabel('Depreciation rate (%)', fontsize=12)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
     plt.grid(True)
+
     plt.tight_layout()
 
     # Save as Fig1B.pdf

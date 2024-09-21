@@ -56,9 +56,12 @@ def create_app_figure1(base_dir, data_dir, processed_data_dir, figures_dir):
     plt.plot(delta_real['Year'], delta_real['delta_real'], marker='o', linestyle='--', label='Actual series')
     plt.plot(delta_corr['Year'], delta_corr['delta_corr'], marker='o', linestyle='-', label='Holding nominal capital shares constant')
     plt.plot(delta_only_price['Year'], delta_only_price['delta_only_price'], marker='o', linestyle='-', label='Constant asset-spec. depr. rates and nominal cap. shares')
-    plt.xlabel('Year')
-    plt.ylabel('Depreciation (%)')
-    plt.legend()
+  # Set font sizes
+    plt.xlabel('Year', fontsize=16)
+    plt.ylabel('Depreciation (%)', fontsize=16)
+    plt.legend(fontsize=16)
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
     plt.grid(True)
     plt.tight_layout()
 

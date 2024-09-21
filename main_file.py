@@ -28,7 +28,7 @@ def run_figures(base_dir):
     create_app_figure1(base_dir, data_dir, processed_data_dir, figures_dir)
     create_app_figure2(base_dir, data_dir, processed_data_dir, figures_dir)
 # Base directory for all data and outputs
-base_dir = r'C:\\Users\\graug\\Dropbox\\shared\\carl-johan\\depreciation\\empirics\\python'
+base_dir = r'C:\\Users\\graug\\Documents\\GitHub\\real_rate_depreciation'
 
 # Run the figure creation scripts
 run_figures(base_dir)

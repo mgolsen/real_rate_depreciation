@@ -38,8 +38,10 @@ def create_scatter_plot(sorted_data, processed_data_dir, figures_dir):
     # Create the scatter plot
     plt.figure(figsize=(10, 6))
     sns.regplot(x='Delta', y='Normalized_Price_Index', data=merged_data, scatter_kws={'s': 50}, line_kws={'color': 'red'}, ci=None)
-    plt.xlabel('Average depreciation (%)')
-    plt.ylabel('Average price increase (%)')
+    plt.xlabel('Average depreciation (%)', fontsize=16)
+    plt.ylabel('Average price increase (%)', fontsize=16)
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
     plt.grid(True)
 
     # Save the figure as a PDF file in the specified directory

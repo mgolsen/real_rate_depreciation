@@ -105,12 +105,17 @@ def create_figure3a(base_dir, data_dir, processed_data_dir, figures_dir):
     cols = ['Change in delta within asset type', 'Reallocation']
     plot_data.plot(kind='bar', x='Year', y=cols, ax=ax, color=['navy', 'darkred'], width=0.8)
     
-    ax.set_xlabel('Year', fontsize=12)
+    ax.set_xlabel('Year', fontsize=16)
     ax.set_ylabel('')
-    ax.set_xticklabels(plot_data['Year'], rotation=0)
+    ax.set_xticklabels(plot_data['Year'], rotation=0,fontsize=16)
     ax.grid(True, linestyle='--', linewidth=0.5)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
+
+    # Set legend size
+    ax.legend(fontsize=16)
+      # Set y-axis label size
+    ax.tick_params(axis='y', labelsize=16)
     plt.tight_layout()
 
     # Save the figure as a PDF file in the specified directory
